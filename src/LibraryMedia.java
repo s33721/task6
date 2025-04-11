@@ -27,4 +27,11 @@ public class LibraryMedia {
             System.out.println("This media hasn't been borrowed");
         }
     }
+
+    public void displayInformation(){
+        System.out.println("Title: " + this.title);
+        System.out.println("Publication Year: " + this.publicationYear);
+        var result = (available ? "Available" : "Borrowed");
+
+    }
 }

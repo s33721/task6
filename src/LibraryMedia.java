@@ -8,12 +8,23 @@ public class LibraryMedia {
         this.publicationYear = publicationYear;
         this.available = true;
     }
-    public void borrow(String title){
-        if (available){
+
+    public void borrow(String title) {
+        if (available) {
             System.out.println("This media has been borrowed");
             this.available = false;
-        } else{
+        } else {
             System.out.println("This media has not been borrowed");
+        }
+    }
+
+    public void returnMedia(){
+        if (!available){
+            this.available = true;
+            System.out.println("This media has been returned");
+        }
+        else{
+            System.out.println("This media hasn't been borrowed");
         }
     }
 }

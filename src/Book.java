@@ -1,6 +1,6 @@
 public class Book extends LibraryMedia {
-    String author;
-    int numberOfPages;
+    private String author;
+    private int numberOfPages;
 
     public Book(String title, int publicationYear, String author, int numberOfPages) {
         super(title, publicationYear);
@@ -22,5 +22,6 @@ public class Book extends LibraryMedia {
             System.out.println("This book is a standard one");
         }
     }
+
 
 }

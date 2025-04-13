@@ -1,7 +1,7 @@
 import java.lang.reflect.Array;
 
 
-public class LibraryTest  {
+public class LibraryTest {
     public static void main(String[] args) {
         Book firstBook = new Book("Harry Potter", 1994, "J.K. Rowling", 346);
         Book secondBook = new Book("I love Java", 1999, "Dima", 1465);
@@ -11,6 +11,10 @@ public class LibraryTest  {
         for (LibraryMedia libraryMediaItem : libraryMedia) {
             libraryMediaItem.displayInformation();
         }
+        firstBook.checkNumberOfPages();
+        secondBook.checkNumberOfPages();
+        firstMovie.checkDuration();
+        secondMovie.checkDuration();
 
     }
 }

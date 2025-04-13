@@ -19,7 +19,7 @@ public class Movie extends LibraryMedia {
         if (duration > 120) {
             System.out.println("This movie is long.");
         } else {
-            System.out.println("This movie is not standard.");
+            System.out.println("This movie is standard.");
         }
     }
 

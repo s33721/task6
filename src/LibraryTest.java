@@ -16,5 +16,13 @@ public class LibraryTest {
         firstMovie.checkDuration();
         secondMovie.checkDuration();
 
+        LibraryMedia book = firstBook;
+        LibraryMedia movie = firstMovie;
+
+        LibraryMedia[] media = {book, movie};
+        for (LibraryMedia libraryMediaItem : media) {
+            if(media instanceof Book)
+        }
+
     }
 }

@@ -5,7 +5,7 @@ public class Book extends LibraryMedia {
     public Book(String title, int publicationYear, String author, int numberOfPages) {
         super(title, publicationYear);
         this.author = author;
-        this.numberOfPages = numberOfPages;
+        if (numberOfPages > 0) this.numberOfPages = numberOfPages;
     }
 
     @Override

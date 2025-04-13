@@ -5,7 +5,7 @@ public class Movie extends LibraryMedia {
     public Movie(String title, int publicationYear, String director, int duration) {
         super(title, publicationYear);
         this.director = director;
-        this.duration = duration;
+        if (duration > 0) this.duration = duration;
     }
 
     @Override

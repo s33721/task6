@@ -19,10 +19,16 @@ public class LibraryTest {
         LibraryMedia book = firstBook;
         LibraryMedia movie = firstMovie;
 
+
         LibraryMedia[] media = {book, movie};
         for (LibraryMedia libraryMediaItem : media) {
-            if(media instanceof Book)
+            if (libraryMediaItem instanceof Book) {
+                ((Book) libraryMediaItem).checkNumberOfPages();
+            } else if (libraryMediaItem instanceof Movie) {
+                ((Movie) libraryMediaItem).checkDuration();
+            }
         }
-
     }
+
 }
+

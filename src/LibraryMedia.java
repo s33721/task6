@@ -9,7 +9,7 @@ public class LibraryMedia {
         this.available = true;
     }
 
-    public void borrow(String title) {
+    public void borrow() {
         if (available) {
             System.out.println("This media has been borrowed");
             this.available = false;
